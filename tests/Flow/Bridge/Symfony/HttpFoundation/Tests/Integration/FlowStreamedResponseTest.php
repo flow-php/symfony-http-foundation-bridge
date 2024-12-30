@@ -10,9 +10,9 @@ use Flow\Bridge\Symfony\HttpFoundation\{FlowStreamedResponse,
     Output\CSVOutput,
     Output\JsonOutput,
     Output\XMLOutput};
-use PHPUnit\Framework\TestCase;
+use Flow\ETL\Tests\FlowTestCase;
 
-final class FlowStreamedResponseTest extends TestCase
+final class FlowStreamedResponseTest extends FlowTestCase
 {
     public function test_streaming_array_response_to_csv() : void
     {
