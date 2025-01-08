@@ -105,6 +105,6 @@ JSON
         ob_start();
         $response->send();
 
-        return ob_get_clean();
+        return (string) ob_get_clean();
     }
 }
