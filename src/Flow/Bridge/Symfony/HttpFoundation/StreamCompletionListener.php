@@ -6,11 +6,7 @@ namespace Flow\Bridge\Symfony\HttpFoundation;
 
 use Flow\ETL\Runtime\Metrics\Report;
 
-/**
- * Interface for closures that are called after streaming completes.
- * Implementations receive the Report from the DataFrame execution.
- */
-interface StreamClosure
+interface StreamCompletionListener
 {
     public function onComplete(?Report $report): void;
 }
